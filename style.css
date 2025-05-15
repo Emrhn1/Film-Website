@@ -1,0 +1,383 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Playwrite+AU+SA:wght@100..400&family=Tagesschrift&display=swap');
+
+/* Navbar ve Sidebar*/
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    height: 190vh;
+    font-family: "Tagesschrift", system-ui;
+
+}
+.navbar{
+    background-color:black;
+    height: 70px;
+    color:white;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 1; 
+}
+
+.navbar-logo a{
+    font-size: 35px;
+    color:indianred;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.navbar-wrapper{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+    padding: 0px 50px;
+}
+
+.sidebar{
+    background-color: black;
+    height: 100%;
+    width: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: fixed;
+    
+}
+.sidebar i {
+    color: white; 
+    font-size: 17px;
+    margin: 10px 0;
+    padding: 20px 0px;
+    cursor: pointer;
+  }
+
+.sidebar i:hover{
+    color: bisque;
+}  
+
+.menu-list{
+    display: flex;
+    list-style: none;
+    column-gap: 60px;
+    font-weight: bold;
+}
+
+.menu-list li:hover{
+    transform: scale(1.08);
+}
+
+.contents-item:hover{
+    color: antiquewhite;
+    cursor: pointer;
+    transition: 0.4s all ease;
+}
+.contents-item-active{
+    color:bisque;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.4s all ease;
+}
+
+.profile-content{
+    align-items: center;
+    display: flex;
+    column-gap: 10px;
+    cursor: pointer;
+}
+
+.profile-text-container{
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-profile{
+    position: absolute;
+    background-color: rgba(45, 50, 55, 0.451);
+    padding: 15px 17px;
+    display: none;
+    min-width: 150px;
+    right: 1px;
+    top: 30px;
+    cursor: pointer;
+}
+
+.profile-text-container:hover .dropdown-profile{
+    display: block;
+}
+
+/* Navbar ve Sidebar */
+
+
+/* Content */
+
+.container{
+    color: white;
+    background-color: black;
+}
+
+.content-wrapper{
+    margin-left: 50px;
+}
+.featured-content{
+    background: url(images/film.jpg);
+    background-size: cover;
+    height: 78.8vh;
+    padding: 50px 50px;  
+}
+
+.content-desc{
+    width: 450px;
+    background-color: transparent;
+    padding: 20px 20px;
+    margin: 20vh 0;
+    backdrop-filter: blur(40px);
+    border-radius: 20px;
+}
+
+.content-buttons{
+   margin-top: -40px;
+   display: flex;
+   column-gap: 40px;
+}
+
+.content-buttons button{
+    font-size: 18px;
+    font-weight: bolder;
+    border:none;
+    border-radius: 18px;
+    padding: 15px 15px;
+    margin-top: -8vh;
+    background-color:bisque;
+    cursor: pointer;
+    outline: none;
+}
+
+.content-buttons button:hover{
+    background-color: indianred;
+}
+
+.movie-list-filter{
+    margin: 10px 0 0 20px;
+    padding: 20px 0;
+}
+
+.movie-list-filter select{
+    background-color: black;
+    color:antiquewhite;
+    padding: 10px 10px;
+    border-radius: 10px;
+    width: 120px;
+}
+
+.movie-list-container{
+    height: 45vh;
+    margin-left: 30px;
+}
+
+.movie-item{
+    position: relative;
+}
+
+.movie-item:hover .movie-item-title{
+    opacity: 1; 
+}
+
+.movie-item:hover .movie-item-buttons{
+    opacity: 1;
+}
+
+.movie-item:hover .movie-item-image{
+    transform: scale(1.11);
+    margin-left: 15px;
+    opacity: 0.6; 
+}
+
+.movie-list{
+    list-style: none;
+    padding: 0;
+    position: relative;
+    display: flex;
+    column-gap: 48px;
+}
+
+.movie-item-image{
+    width: 300px;
+    object-fit: cover;
+    transition: 0.8s all ease;
+    cursor: pointer;
+}
+
+.movie-list-title{
+    margin-bottom: 30px;
+}
+
+.movie-item-title{
+    background-color: rgba(45, 50, 55, 0.451);
+    font-weight: bolder;
+    font-size: 21px;
+    position: absolute;
+    top: 10px;
+    left: 20px;
+    opacity: 0;
+    transition: 0.8s all ease;
+}
+
+.movie-item-buttons {
+    position: absolute;
+    bottom: 20px;
+    left: 50px;
+    background-color: rgba(45, 50, 55, 0.451);
+    display: flex;
+    column-gap: 40px;
+    opacity: 0;
+    transition: 0.8s all ease;
+}
+
+.movie-item-buttons i{
+    cursor: pointer;
+    opacity: 0.5;
+    transition: 0.5s all ease;
+}
+
+.movie-item-buttons i:hover{
+    opacity: 1;
+}
+
+/* RESPONSIVE TASARIM */
+
+/* Mobil cihazlar için (max-width: 768px) */
+@media screen and (max-width: 768px) {
+
+    .navbar-wrapper {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 10px 20px;
+    }
+
+    .menu-list {
+        flex-direction: column;
+        row-gap: 10px;
+        column-gap: 0;
+        margin-top: 10px;
+    }
+
+    .sidebar {
+        flex-direction: row;
+        height: 50px;
+        width: 100%;
+        justify-content: space-around;
+        position: fixed;
+        top: 70px;
+        left: 0;
+        flex-wrap: wrap;
+    }
+
+    .sidebar i {
+        padding: 10px 0;
+    }
+
+    .content-wrapper {
+        margin-left: 0;
+        margin-top: 130px; /* navbar + sidebar yüksekliği */
+    }
+
+    .featured-content {
+        height: auto;
+        padding: 20px;
+        background-position: center;
+    }
+
+    .content-desc {
+        width: 100%;
+        margin: 10vh 0;
+        padding: 15px;
+    }
+
+    .content-buttons {
+        flex-direction: column;
+        row-gap: 15px;
+        align-items: flex-start;
+        margin-top: 0;
+    }
+
+    .content-buttons button {
+        width: 100%;
+    }
+
+    .movie-list {
+        flex-direction: column;
+        row-gap: 20px;
+        align-items: center;
+    }
+
+    .movie-item-image {
+        width: 90%;
+        margin: 0;
+    }
+
+    .movie-item-title {
+        font-size: 18px;
+        left: 10px;
+    }
+
+    .movie-item-buttons {
+        left: 10px;
+        flex-direction: row;
+        column-gap: 20px;
+    }
+
+    .movie-list-container {
+        margin-left: 0;
+    }
+
+    .movie-list-filter {
+        margin: 10px 20px;
+    }
+
+    .dropdown-profile {
+        right: 0;
+        top: 40px;
+        width: 100%;
+    }
+
+    .profile-content {
+        flex-direction: column;
+        align-items: flex-start;
+        row-gap: 5px;
+    }
+}
+
+/* Tablet cihazlar için (min-width: 769px) ve (max-width: 1024px) */
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+
+    .navbar-wrapper {
+        padding: 0 30px;
+    }
+
+    .menu-list {
+        column-gap: 30px;
+    }
+
+    .sidebar {
+        width: 60px;
+    }
+
+    .content-wrapper {
+        margin-left: 60px;
+    }
+
+    .movie-item-image {
+        width: 250px;
+    }
+
+    .movie-item-buttons {
+        column-gap: 20px;
+    }
+
+    .content-desc {
+        width: 80%;
+    }
+}

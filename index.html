@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Film Hanem</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
+    />
+    <link rel="icon" type="image/x-icon" href="images/film.svg">
+  </head>
+
+  <body>
+    <div class="navbar">
+      <div class="navbar-wrapper">
+        <div class="navbar-logo">
+          <a href="index.html">Film Hanem</a>
+        </div>
+        <div class="menu-content">
+          <ul class="menu-list">
+            <li class="contents-item-active">Ana Sayfa</li>
+            <li class="contents-item">Filmler</li>
+            <li class="contents-item">Diziler</li>
+            <li class="contents-item">En Popülerler</li>
+          </ul>
+        </div>
+        <div class="profile-content">
+          <img
+            src="images/me.jpg"
+            style="
+              width: 47px;
+              height: 47px;
+              border-radius: 50%;
+              object-fit: cover;
+            "
+            alt=""
+          />
+          <div class="profile-text-container">
+            <span class="profile-text">Hesabım</span>
+            <div class="dropdown-profile">
+              <p>Hesabımı Görüntüle</p>
+            </div>
+            <i class="bi bi-caret-down-fill"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="sidebar">
+      <i class="bi bi-search"></i>
+      <i class="bi bi-house"></i>
+      <i class="bi bi-people-fill"></i>
+      <i class="bi bi-bookmark-fill"></i>
+      <i class="bi bi-shop"></i>
+      <i class="bi bi-gear-fill"></i>
+    </div>
+
+    <div class="container">
+      <div class="content-wrapper">
+        <div class="featured-content">
+          <p class="content-desc">
+            John Wick 4, 2023 yılında vizyona giren Amerikan yapımı neo-noir
+            aksiyon-gerilim filmidir. 2019'daki John Wick 3: Parabellum'un
+            doğrudan devamı ve John Wick serisinin dördüncü filmidir.
+          </p>
+
+          <div class="content-buttons">
+            <button class="content-buttons-play">
+              <i class="bi bi-play-circle"></i>
+              Oynat
+            </button>
+            <button class="content-buttons-info">
+              <i class="bi bi-info-circle"></i>
+              Daha Fazla Bilgi
+            </button>
+          </div>
+        </div>
+        <div class="movie-list-filter">
+          <select>
+            <option>Aksiyon</option>
+            <option>Gerilim</option>
+            <option>Macera</option>
+            <option>Komedi</option>
+            <option>Bilim Kurgu</option>
+          </select>
+        </div>
+
+        <div class="movie-list-container">
+          <h1 class="movie-list-title">Popüler</h1>
+          <div class="movie-list-wrapper">
+            <ul class="movie-list">
+              <li class="movie-item">
+                <img class="movie-item-image" src="images/spider-man-2.webp" alt="" />
+                <div class="movie-item-info">
+                  <span class="movie-item-title">Spiderman 2</span>
+                  <div class="movie-item-buttons">
+                    <i class="bi bi-play-circle-fill"></i>
+                    <i class="bi bi-hand-thumbs-up-fill"></i>
+                    <i class="bi bi-hand-thumbs-down-fill"></i>
+                    <i class="bi bi-plus-circle-fill"></i>
+                  </div>
+                </div>
+              </li>
+              <li class="movie-item">
+                <img class="movie-item-image" src="images/batman.jpg" alt=""/>
+                <div class="movie-item-info">
+                  <span class="movie-item-title">Batman: The Dark Night</span>
+                  <div class="movie-item-buttons">
+                    <i class="bi bi-play-circle-fill"></i>
+                    <i class="bi bi-hand-thumbs-up-fill"></i>
+                    <i class="bi bi-hand-thumbs-down-fill"></i>
+                    <i class="bi bi-plus-circle-fill"></i>
+                  </div>
+                </div>
+              </li>
+              <li class="movie-item">
+                <img class="movie-item-image" src="images/the-godfather-baba-facebook-kapak.jpg" alt=""/>
+                <div class="movie-item-info">
+                  <span class="movie-item-title">The Godfather</span>
+                  <div class="movie-item-buttons">
+                    <i class="bi bi-play-circle-fill"></i>
+                    <i class="bi bi-hand-thumbs-up-fill"></i>
+                    <i class="bi bi-hand-thumbs-down-fill"></i>
+                    <i class="bi bi-plus-circle-fill"></i>
+                  </div>
+                </div>
+              </li>
+              <li class="movie-item">
+                <img class="movie-item-image" src="images/fight-club-movie.jpg" alt=""/>
+                <div class="movie-item-info">
+                  <span class="movie-item-title">Fight Club</span>
+                  <div class="movie-item-buttons">
+                    <i class="bi bi-play-circle-fill"></i>
+                    <i class="bi bi-hand-thumbs-up-fill"></i>
+                    <i class="bi bi-hand-thumbs-down-fill"></i>
+                    <i class="bi bi-plus-circle-fill"></i>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="movie-list-container">
+          <h1 class="movie-list-title">Son Çıkanlar</h1>
+          <div class="movie-list-wrapper">
+            <ul class="movie-list">
+              <li class="movie-item">
+                <img class="movie-item-image" src="images/diplomat.webp" alt="" />
+                <div class="movie-item-info">
+                  <span class="movie-item-title">The Diplomat</span>
+                  <div class="movie-item-buttons">
+                    <i class="bi bi-play-circle-fill"></i>
+                    <i class="bi bi-hand-thumbs-up-fill"></i>
+                    <i class="bi bi-hand-thumbs-down-fill"></i>
+                    <i class="bi bi-plus-circle-fill"></i>
+                  </div>
+                </div>
+              </li>
+              <li class="movie-item">
+                <img class="movie-item-image" src="images/mtitle-1170x720.jpg" alt=""/>
+                <div class="movie-item-info">
+                  <span class="movie-item-title">A Minecraft Movie</span>
+                  <div class="movie-item-buttons">
+                    <i class="bi bi-play-circle-fill"></i>
+                    <i class="bi bi-hand-thumbs-up-fill"></i>
+                    <i class="bi bi-hand-thumbs-down-fill"></i>
+                    <i class="bi bi-plus-circle-fill"></i>
+                  </div>
+                </div>
+              </li>
+              <li class="movie-item">
+                <img class="movie-item-image" src="images/Havoc-Movie-Review.webp" alt=""/>
+                <div class="movie-item-info">
+                  <span class="movie-item-title">Havoc</span>
+                  <div class="movie-item-buttons">
+                    <i class="bi bi-play-circle-fill"></i>
+                    <i class="bi bi-hand-thumbs-up-fill"></i>
+                    <i class="bi bi-hand-thumbs-down-fill"></i>
+                    <i class="bi bi-plus-circle-fill"></i>
+                  </div>
+                </div>
+              </li>
+              <li class="movie-item">
+                <img class="movie-item-image" src="images/images.jpeg" alt=""/>
+                <div class="movie-item-info">
+                  <span class="movie-item-title">Kaptan Amerika: Cesur Yeni Dünya</span>
+                  <div class="movie-item-buttons">
+                    <i class="bi bi-play-circle-fill"></i>
+                    <i class="bi bi-hand-thumbs-up-fill"></i>
+                    <i class="bi bi-hand-thumbs-down-fill"></i>
+                    <i class="bi bi-plus-circle-fill"></i>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="movie-list-container">
+          <h1 class="movie-list-title">Gündemdekiler</h1>
+          <div class="movie-list-wrapper">
+            <ul class="movie-list">
+              <li class="movie-item">
+                <img class="movie-item-image" src="images/hq720.jpg" alt="" />
+                <div class="movie-item-info">
+                  <span class="movie-item-title">Titanic</span>
+                  <div class="movie-item-buttons">
+                    <i class="bi bi-play-circle-fill"></i>
+                    <i class="bi bi-hand-thumbs-up-fill"></i>
+                    <i class="bi bi-hand-thumbs-down-fill"></i>
+                    <i class="bi bi-plus-circle-fill"></i>
+                  </div>
+                </div>
+              </li>
+              <li class="movie-item">
+                <img class="movie-item-image" src="images/x1080.jpeg" alt=""/>
+                <div class="movie-item-info">
+                  <span class="movie-item-title">Avatar</span>
+                  <div class="movie-item-buttons">
+                    <i class="bi bi-play-circle-fill"></i>
+                    <i class="bi bi-hand-thumbs-up-fill"></i>
+                    <i class="bi bi-hand-thumbs-down-fill"></i>
+                    <i class="bi bi-plus-circle-fill"></i>
+                  </div>
+                </div>
+              </li>
+              <li class="movie-item">
+                <img class="movie-item-image" src="images/fastandfurious.webp" alt=""/>
+                <div class="movie-item-info">
+                  <span class="movie-item-title">Hızlı ve Öfkeli 9</span>
+                  <div class="movie-item-buttons">
+                    <i class="bi bi-play-circle-fill"></i>
+                    <i class="bi bi-hand-thumbs-up-fill"></i>
+                    <i class="bi bi-hand-thumbs-down-fill"></i>
+                    <i class="bi bi-plus-circle-fill"></i>
+                  </div>
+                </div>
+              </li>
+              <li class="movie-item">
+                <img class="movie-item-image" src="images/p13472534_v_h8_ae.jpg" alt=""/>
+                <div class="movie-item-info">
+                  <span class="movie-item-title">Barbie</span>
+                  <div class="movie-item-buttons">
+                    <i class="bi bi-play-circle-fill"></i>
+                    <i class="bi bi-hand-thumbs-up-fill"></i>
+                    <i class="bi bi-hand-thumbs-down-fill"></i>
+                    <i class="bi bi-plus-circle-fill"></i>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
